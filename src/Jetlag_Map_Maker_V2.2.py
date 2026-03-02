@@ -1,4 +1,4 @@
-import tkinter as tk
+﻿import tkinter as tk
 
 from config import BG  # or set BG here if you haven't made config.py yet
 from image_loader import load_image

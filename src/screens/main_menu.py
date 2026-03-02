@@ -1,4 +1,4 @@
-import tkinter as tk
+﻿import tkinter as tk
 import config
 
 
@@ -30,6 +30,8 @@ def main_menu(root, show_screen, photo):
     from screens.bbox_screen import bbox_screen
     from screens.geo_screen import geo_screen
     from screens.kml_screen import kml_screen
+    from screens.local_data_screen import local_data_screen
+    from screens.settings_screen import settings_screen
 
     tk.Button(
         frame,
@@ -56,6 +58,26 @@ def main_menu(root, show_screen, photo):
         bg=config.BTN,
         fg=config.FG,
         command=lambda: show_screen(kml_screen)
+    ).pack(pady=5)
+
+    # --- New Buttons ---
+
+    tk.Button(
+        frame,
+        text="Get Local Data",
+        width=25,
+        bg=config.BTN,
+        fg=config.FG,
+        command=lambda: show_screen(local_data_screen)
+    ).pack(pady=5)
+
+    tk.Button(
+        frame,
+        text="Settings",
+        width=25,
+        bg=config.BTN,
+        fg=config.FG,
+        command=lambda: show_screen(settings_screen)
     ).pack(pady=5)
 
     return frame
