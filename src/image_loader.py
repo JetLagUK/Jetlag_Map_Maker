@@ -1,4 +1,4 @@
-from pathlib import Path
+﻿from pathlib import Path
 from typing import Optional, Tuple, Dict
 from PIL import Image, ImageTk
 

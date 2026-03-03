@@ -1,0 +1,24 @@
+
+== United Kingdom (united-kingdom) ==
+children_ids count: 5 | parent_id scan count: 5
+OK: children_ids matches parent_id scan.
+
+== England (england) ==
+children_ids count: 47 | parent_id scan count: 47
+OK: children_ids matches parent_id scan.
+
+== Scotland (scotland) ==
+children_ids count: 0 | parent_id scan count: 0
+OK: children_ids matches parent_id scan.
+
+== Wales (wales) ==
+children_ids count: 0 | parent_id scan count: 0
+OK: children_ids matches parent_id scan.
+
+== Spain (spain) ==
+children_ids count: 18 | parent_id scan count: 18
+OK: children_ids matches parent_id scan.
+
+== Poland (poland) ==
+children_ids count: 16 | parent_id scan count: 16
+OK: children_ids matches parent_id scan.
