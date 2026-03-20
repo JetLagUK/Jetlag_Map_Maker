@@ -14,8 +14,8 @@ LOCAL_DATA_DIR = BASE_DIR / "local_data_outputs"
 LOCAL_DATA_DIR.mkdir(exist_ok=True)
 
 # ----------------- COLOURS -----------------
-BG = "#1B2A40" if platform.system() != "Darwin" else None       # Background
-FG = "#FFFFFF" if platform.system() != "Darwin" else None       # Foreground / text
+BG = "#1B2A40" if platform.system() != "Darwin" else "#ececec"       # Background
+FG = "#FFFFFF" if platform.system() != "Darwin" else "#000000"       # Foreground / text
 BTN = "#F68B1F"       # Buttons / accents
 DANGER = "#D21F2D"    # Errors / destructive actions
 
