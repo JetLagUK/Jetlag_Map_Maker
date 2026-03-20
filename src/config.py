@@ -2,6 +2,7 @@
 Global configuration and shared state for Jetlag UK Map Maker
 """
 from pathlib import Path
+import platform
 
 # Project root = folder where config.py lives
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -13,8 +14,8 @@ LOCAL_DATA_DIR = BASE_DIR / "local_data_outputs"
 LOCAL_DATA_DIR.mkdir(exist_ok=True)
 
 # ----------------- COLOURS -----------------
-BG = "#1B2A40"        # Background
-FG = "#FFFFFF"        # Foreground / text
+BG = "#1B2A40" if platform.system() != "Darwin" else None       # Background
+FG = "#FFFFFF" if platform.system() != "Darwin" else None       # Foreground / text
 BTN = "#F68B1F"       # Buttons / accents
 DANGER = "#D21F2D"    # Errors / destructive actions
 
